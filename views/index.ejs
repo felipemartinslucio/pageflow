@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Páginas Disponíveis</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="/logo.png" alt="Logo" class="logo">
+    <h1>Páginas Disponíveis</h1>
+    <a href="/login" class="login-button">Login</a>
+    <% Object.keys(categories).forEach(category => { %>
+      <h2><%= category %></h2>
+      <ul>
+        <% categories[category].forEach(page => { %>
+          <li><%- page %></li>
+        <% }) %>
+      </ul>
+    <% }) %>
+  </div>
+</body>
+</html>

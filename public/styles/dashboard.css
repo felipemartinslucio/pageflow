@@ -1,0 +1,67 @@
+/* Estilo geral da página de dashboard */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo dos botões */
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  background-color: #910000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #111111;
+  transform: translateY(-2px);
+}
+
+.logout-button {
+  background-color: #111111;
+}
+
+.logout-button:hover {
+  background-color: #910000;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; 
+}
+

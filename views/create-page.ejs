@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Página</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <h1>Criar Página</h1>
+  <form method="POST" action="/create-page">
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" required>
+    <label for="url">URL:</label>
+    <input type="text" id="url" name="url" required>
+    <label for="category">Categoria:</label>
+    <input type="text" id="category" name="category" required>
+    <label for="content">Conteúdo:</label>
+    <textarea id="content" name="content" rows="10" required></textarea>
+    <button type="submit">Criar Página</button>
+  </form>
+</body>
+</html>

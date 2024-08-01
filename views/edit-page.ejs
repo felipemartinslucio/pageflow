@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Página</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <h1>Editar Página</h1>
+  <form method="POST" action="/edit-page/<%= url %>">
+    <label for="content">Conteúdo:</label>
+    <textarea id="content" name="content" rows="10" required><%= content %></textarea>
+    <button type="submit">Salvar Alterações</button>
+  </form>
+</body>
+</html>

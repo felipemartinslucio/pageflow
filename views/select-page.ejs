@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecionar Página para Editar</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <h1>Selecionar Página para Editar</h1>
+  <form id="edit-page-form">
+    <label for="page-url">URL da Página:</label>
+    <select id="page-url" name="url" required>
+      <% pages.forEach(page => { %>
+        <option value="<%= page.url %>"><%= page.title %></option>
+      <% }) %>
+    </select>
+    <button type="submit">Editar</button>
+  </form>
+
+  <script>
+    document.getElementById('edit-page-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const selectedUrl = document.getElementById('page-url').value;
+      window.location.href = `/edit-page/${encodeURIComponent(selectedUrl)}`;
+    });
+  </script>
+</body>
+</html>
